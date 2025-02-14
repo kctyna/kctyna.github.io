@@ -1,1 +1,100 @@
-Hello world
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 My BBG</title>
+    <style>
+      body
+	{
+	background-image: url("background.png");
+	}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+        .slideshow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .slideshow img {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            opacity: 0.95;
+        }
+        @keyframes moveRandom1 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30vw, 15vh) scale(1.1); }
+        }
+        @keyframes moveRandom2 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(-25vw, -20vh) scale(1.2); }
+        }
+        @keyframes moveRandom3 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(20vw, -10vh) scale(1.1); }
+        }
+        @keyframes moveRandom4 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(-15vw, 25vh) scale(1); }
+        }
+        .slideshow img:nth-child(1) { top: 10%; left: 10%; animation: moveRandom1 24s infinite alternate ease-in-out; }
+        .slideshow img:nth-child(2) { top: 50%; left: 30%; animation: moveRandom2 28s infinite alternate ease-in-out; }
+        .slideshow img:nth-child(3) { top: 70%; left: 60%; animation: moveRandom3 32s infinite alternate ease-in-out; }
+        .slideshow img:nth-child(4) { top: 20%; left: 50%; animation: moveRandom4 26s infinite alternate ease-in-out; }
+        .slideshow img:nth-child(5) { top: 40%; left: 70%; animation: moveRandom1 30s infinite alternate ease-in-out; }
+        .slideshow img:nth-child(6) { top: 60%; left: 20%; animation: moveRandom2 34s infinite alternate ease-in-out; }
+        .slideshow img:nth-child(7) { top: 80%; left: 40%; animation: moveRandom3 36s infinite alternate ease-in-out; }
+        
+        header {
+            padding: 50px;
+        }
+        section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+        h1 {
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="images/photo_5_2025-02-14_12-59-13.jpg" alt="Zdjęcie 1">
+        <img src="images/photo_7_2025-02-14_12-59-13.jpg" alt="Zdjęcie 2">
+        <img src="images/photo_3_2025-02-14_12-59-13.jpg" alt="Zdjęcie 3">
+        <img src="images/photo_2_2025-02-14_12-59-13.jpg" alt="Zdjęcie 4">
+        <img src="images/photo_1_2025-02-14_12-59-13.jpg" alt="Zdjęcie 5">
+        <img src="images/photo_6_2025-02-14_12-59-13.jpg" alt="Zdjęcie 6">
+        <img src="images/photo_4_2025-02-14_12-59-13.jpg" alt="Zdjęcie 7">
+    </div>
+    
+    <header>
+        <h1>Dla Mojej Kochanej Martyny</h1>
+    </header>
+    <section>
+        <p>
+            Kocham Cię najbardziej na świecie ❤️
+        </p>
+    </section>
+</body>
+</html>
